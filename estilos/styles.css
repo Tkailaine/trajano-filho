@@ -42,7 +42,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: linear-gradient(45deg,#089cff, #063e58 50%);
+    background-image: linear-gradient(45deg,#063e58, #012130 50%);
     color: white;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -473,7 +473,7 @@
 background-repeat: no-repeat;
 background-size: cover;
 background-position: top;
-background-attachment: fixed;
+
   width: 100%;
   padding: 100px 0px;
 }

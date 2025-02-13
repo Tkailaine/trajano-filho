@@ -3,6 +3,11 @@
 nav.menu ul {
   gap: 20px;
 }
+
+  
+.logo img{
+  width: 220px;
+}
 .bandeira{
     flex-direction: row;
 }
