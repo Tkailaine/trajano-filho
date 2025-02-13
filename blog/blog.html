@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Blog Responsivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 15px 0 10px;
+        }
+
+        .blog-summary {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .pagination a:hover {
+            text-decoration: underline;
+        }
+
+        .news-page {
+            display: none;
+        }
+
+        .news-page h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .news-page p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .btn-inicio{
+            display: block;
+            border: none;
+            width: 120px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+            background-color: #007BFF;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+
+        .btn-inicio:hover{
+            background-color: #022d5c;
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Notícias</h1>
+        <!-- Grid de notícias -->
+        <div id="news-container" class="blog-grid">
+            
+            <div class="blog-card" data-title="TST autoriza penhora de até 30% da aposentadoria para quitação de dívidas trabalhistas"
+            data-content="
+        
+            <p>O Tribunal Superior do Trabalho (TST) autorizou a penhora de até 30% da aposentadoria de um devedor para o pagamento de dívidas trabalhistas, desde que, após a retenção, a quantia restante não seja inferior ao valor de um salário mínimo. A decisão reformou o entendimento do Tribunal Regional do Trabalho da 2ª Região (TRT-2), que havia considerado a reforma como impenhorável para fins de quitação de subsídios trabalhistas. A decisão do TST foi baseada na interpretação do Código de Processo Civil de 2015, que permite a penhora de rendas, como aposentadorias, para o pagamento de pensões alimentícias, o que se estende também aos créditos trabalhistas.</p>
+            
+            <p>O caso envolveu um trabalhador que buscava o pagamento de uma dívida reconhecida judicialmente contra uma empresa e seu sócio. O TRT-2 inicialmente decidiu que a reforma seria impenhorável, conforme o artigo 833 do CPC. No entanto, a relatora ministra Maria Helena Mallmann, ao analisar o recurso, destacou que o novo CPC permite uma pena de até 30% da aposentadoria, respeitando as limitações legais, como a manutenção do valor do salário mínimo. O TST determinou, então, que fosse realizada uma pena de 30% dos comprovantes de aposentadoria do desenvolvedor. O escritório Tadim Neves Advocacia representa o trabalhador no processo. </p>
+            <p>Processo: 1001444-59.2019.5.02.0081.</p>
+            
+           
+           ">
+           <img src="../imagens/aposentadoria.jpg" alt="Imagem da notícia">
+           <h2 class="blog-title">TST autoriza penhora de até 30% da aposentadoria para quitação de dívidas trabalhistas</h2>
+           <p class="blog-summary">O TST decidiu que é possível penhorar até 30% da aposentadoria para saldar dívidas trabalhistas, já que a renda remanescente não seja inferior ao salário mínimo. A decisão reformou o entendimento do TRT da 2ª Região, que considerava a aposentadoria impenhorável para créditos trabalhistas.</p>
+           <p class="blog-meta">Fonte: Migalhas - Data: 13/02/2025</p>
+           <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+       </div>
+       
+           
+            <div class="blog-card" data-title="TJ/SP mantém bloqueio de CNH, passaporte e cartões de crédito de devedor" 
+                 data-content="
+
+                 <p>A 12ª Câmara de Direito Privado do Tribunal de Justiça de São Paulo (TJ/SP) decidiu manter as medidas coercitivas de suspensão da CNH, passaporte e bloqueio de cartões de crédito de um devedor, no contexto de uma execução de crédito. As restrições foram impostas com o objetivo de garantir a satisfação do subsídio, uma vez que ocorreram dificuldades na localização de bens penhoráveis.</p>
+                 
+                 <p>O devedor recorreu, alegando que as medidas afetaram sua capacidade de retorno ao mercado de trabalho e prejudicaram sua vida pessoal. Ele também argumentou que as restrições eram desproporcionais e não ajudariam na quitação da dívida, além de contestar a alegação de ocultação de patrimônio que justificou a aplicação das medidas. Como alternativa, pediu a suspensão das restrições até o julgamento definitivo do Tema 1.137, em análise pelo STJ, sobre a aplicabilidade dessas medidas na fase de execução.</p>
+                 
+                 <p>O relator, desembargador Marco Pelegrini, destacou que as medidas coercitivas foram fundamentadas na necessidade de garantir a efetividade da execução, com base no artigo 139, IV, do Código de Processo Civil (CPC), e estavam em conformidade com os princípios da proporcionalidade e razoabilidade. O acórdão também reafirmou que não havia novos elementos que indicassem a desnecessidade das restrições, além de compromissos de blindagem patrimonial. A decisão ainda citou a constitucionalidade do artigo 139, IV, do CPC, conforme decisão do STF, que legitimou as medidas coercitivas atípicas na fase de execução.</p>
+
+                <p>Com isso, as restrições impostas ao devedor continuam válidas. O escritório Abrahão Issa Neto e José Maria da Costa Sociedade de Advogados representam o caso. </p>
+                 
+                <p> Processo: 2371219-29.2024.8.26.0000.</p>
+                 
+                 ">
+                <img src="../imagens/cnh.jpg" alt="Imagem da notícia">
+                <h2 class="blog-title">TJ/SP mantém bloqueio de CNH, passaporte e cartões de crédito de devedor</h2>
+                <p class="blog-summary">A 12ª Câmara de Direito Privado do TJ/SP decidiu pela manutenção da suspensão da CNH, passaporte e bloqueio de cartões de crédito de um devedor, como medida para garantir a execução de crédito. A defesa alegou que as restrições eram desproporcionais e dificultavam sua vida pessoal e profissional.</p>
+                <p class="blog-meta">Fonte: Migalhas - Data: 13/02/2025</p>
+                <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+            </div>
+
+            <div class="blog-card" data-title="Agricultores enfrentam crise climática e econômica recuperação recuperação judicial" 
+            data-content="
+
+            <p>Agricultores de Goiás, impactados pela crise econômica gerada pela queda nos preços de commodities e eventos climáticos adversos, conseguem recuperação judicial para garantir a continuidade de suas atividades. A decisão foi proferida pelo juiz Eduardo Guimarães de Morais, da 1ª Vara Judicial de Caiapônia/GO. O pedido foi fundamentado na Lei 11.101/05 de Recuperação e Falências, com a alegação de que, apesar da supervisão das operações, os produtores enfrentam dificuldades financeiras devido ao aumento de custos operacionais e à instabilidade do mercado agrícola.</p>
+
+            
+            <p>Os produtores que atuam na produção de soja e milho desde 2016 possuem um passivo significativo oriundo de dívidas com fornecedores e financiamentos. A crise foi agravada pela pandemia de Covid-19 e pelas perdas de safra nos últimos anos. Eles afirmaram que a recuperação judicial é essencial para superar a insolvência e garantir o pagamento dos credores.</p>
+
+           <p>O juiz obteve que os requerentes atendessem aos requisitos da Lei 11.101/05, como o tempo mínimo de atividade de dois anos e a inexistência de falência ou recuperação judicial nos últimos cinco anos. Como parte da decisão, foi nomeado um administrador judicial e estabeleceu um prazo de 60 dias para a apresentação do plano de recuperação. Além disso, as execuções e cobranças foram suspensas por 180 dias, e os bens essenciais, como colheitadeiras, tratores e pulverizadores, não poderão ser apreendidos durante esse período.</p>
+
+           
+            <p>De acordo com o advogado Leandro Amaral, que representa os produtores rurais, as dívidas somam cerca de R$ 80 milhões. Ele destacou ainda que Goiás foi o segundo estado com o maior número de pedidos de recuperação judicial no agronegócio em 2024, e que essa tendência deve continuar em 2025. A recuperação judicial, segundo Amaral, permitirá que os produtores superem a crise e retomem o crescimento do negócio, mantendo o legado familiar no setor.</p>
+
+           
+            <p>Processo: 6132991-97.2024.8.09.0023.</p>">
+                <img src="../imagens/agricultura.jpg" alt="Imagem da notícia">
+                <h2 class="blog-title">Agricultores enfrentam crise climática e econômica recuperação recuperação judicial</h2>
+                <p class="blog-summary">Produtores rurais de Goiás obtiveram decisão favorável para recuperação judicial devido a dificuldades financeiras causadas pela queda nos preços de commodities e fatores climáticos adversos. A medida visa garantir a continuidade das operações e o pagamento das dívidas.</p>
+                <p class="blog-meta">Fonte: Migalhas - Data: 13/02/2025</p>
+                <a href="#" class="read-more" onclick="openNews(this)">Leia mais</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Página de notícia completa -->
+    <!-- Página de notícia completa -->
+<div class="news-page" id="news-page">
+    <div class="container">
+        <a href="#" id="back-to-home">← Voltar</a>
+        <h1 id="news-title"></h1>
+        <p id="news-content"></p>
+    </div>
+</div>
+
+<a href="../index.html" target="_self" style="text-decoration: none;"><button type="button" class="btn-inicio">Inicio</button></a>
+
+<script>
+    function openNews(element) {
+        const card = element.closest('.blog-card');
+        const title = card.getAttribute('data-title');
+        const content = card.getAttribute('data-content');
+
+        // Esconde a página inicial e mostra a notícia completa
+        document.querySelector('.container').style.display = 'none';
+        document.querySelector('.news-page').style.display = 'block';
+
+        // Define o conteúdo da notícia com HTML
+        document.getElementById('news-title').textContent = title;
+        document.getElementById('news-content').innerHTML = content;
+    }
+
+    document.getElementById('back-to-home').onclick = function() {
+        // Mostra a página inicial
+        document.querySelector('.container').style.display = 'block';
+        // Esconde a página da notícia
+        document.querySelector('.news-page').style.display = 'none';
+    };
+</script>
+
+</body>
+</html>

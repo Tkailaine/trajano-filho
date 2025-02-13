@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+nav.menu ul {
+  gap: 20px;
+}
+.bandeira{
+    flex-direction: row;
+}
+
+.imagem-destaque{
+  width: 55%;
+
+}
+
+
+.areas{
+  font-size: 0.8em;
+
+}
+
+
+
+.ft-atuacao{
+height: 700px;
+
+}
+
+
+
+
+.txt-advogado{
+  width: 80%;
+}
+
+
+  .links-uteis > li{
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }
+  
+  .form {
+  
+    font-size: 1.125rem;
+
+  }
+
+  .links-uteis > li{
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }
+

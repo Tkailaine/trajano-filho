@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+
+.iarea{
+margin: auto;
+width: 30px;
+height: 30px;
+}
+
+.chamada-acao{
+padding: 0px 20px 20px 20px;
+}
+
+.card{
+    width: 300px;
+    height: 550px;
+   
+  }
+  
+  .card h1{
+    font-size: 1em;
+  }
+  
+  .card h2{
+
+   font-size: 1em;
+  }
+  
+  .ft-advogado{
+    width: 300px;
+  
+  }
+  
+  .txt-advogado{
+    width: 300px;
+   
+    font-size: 0.8em;
+    
+  
+  }
+
+  
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 150px;
+
+}
+  
+
+  

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.bandeira{
+    background-attachment: fixed;
+    background-image: url(../imagens/banner.jpg);
+    background-position: center;  
+  
+}
+
+
+.areas{
+    font-size: 1em;
+  }
+  .imagem-destaque{
+    width: 40%;
+    margin-right: 50px;
+  }
+  
+.area-principal{
+    flex-direction: row; 
+}
+.ft-atuacao{
+    height: 700px;   
+    }   
+
+
+.cv-advogado{
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  gap: 100px;
+  
+}
+
+
+.txt-advogado{
+  width: 80%;
+}
+    
+.sessao-footer{
+    gap: 40px;
+    justify-content: start;
+    flex-direction: row;
+  }
+  
+  .sessao-footer > div{
+  margin-top: 25px;
+  margin-right: 60px;
+  }
+  
+  .sessao-conquistas{
+    height: 200px;
+  }
+  
+  .countainer-principal-counter{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links-uteis > li{
+    font-size: 1.4em;
+    margin: 20px 0px;
+  }
+  
+.h1-chamada{
+  top: 30%;
+}
+
+.chamada-acao{
+  background-attachment: fixed;
+}
+  .form {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      top: 52%;
+      left: 50%;
+      height: 200px;
+      padding: 0px 0px;
+      gap: 0px;
+   
+  }
+
+  .form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 190px;
+  height: 40px;
+  border-radius: 50px;
+
+}
+
+  .h1-form{
+    top: 15%;
+    font-size: 1.5em;
+  }
+  
+
+
+
+  
+

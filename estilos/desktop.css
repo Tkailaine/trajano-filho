@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.bandeira{
+    background-attachment: fixed;
+    background-image: url(../imagens/banner.jpg);
+    background-position: center;  
+
+}
+
+
+
+.areas{
+    font-size: 1em;
+  }
+
+
+
+.area-principal{
+
+flex-direction: row;
+
+}
+
+.ft-atuacao{
+    height: 700px;
+    
+}
+.imagem-destaque{
+  width: 40%;
+  margin-right: 50px;
+  
+}
+
+
+.cv-advogado{
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  gap: 50px;
+  
+}
+
+
+.txt-advogado{
+  width: 90%
+  
+}
+
+
+.footer{
+  height: 300px;
+}
+
+.sessao-footer{
+
+  justify-content: start;
+  flex-direction: row;
+  
+}
+
+.links-uteis > li{
+  font-size: 1.3em;
+  margin: 20px 0px;
+}
+
+.sessao-footer > div{
+margin-top: 25px;
+margin-right: 60px;
+}
+
+.h1-chamada{
+  top: 30%;
+}
+
+.chamada-acao{
+  background-attachment: fixed;
+}
+
+  .form {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      top: 52%;
+      left: 50%;
+      height: 200px;
+      padding: 0px 0px;
+      gap: 0px;
+   
+  }
+
+  .form input,
+.form textarea,
+.form button {
+
+  width: 120px;
+  height: 40px;
+
+
+}
+
+  .h1-form{
+    top: 15%;
+    font-size: 1.5em;
+  }
+  
+
+.links-uteis > li{
+  font-size: 1.3em;
+  margin: 20px 0px;
+}
+
+.sessao-footer > div{
+margin-top: 25px;
+margin-right: 60px;
+}
+
