@@ -115,7 +115,7 @@ let advogados = [
 
   {
     nome: "Gabriel Moraes",
-    cargo: "Advogada",
+    cargo: "Advogado",
     imagem: "../imagens/gabriel.jpeg",
     info: `
       <li>Formação Acadêmica: Universidade Paulista </li>
