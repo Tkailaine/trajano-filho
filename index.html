@@ -218,23 +218,25 @@
    <section></section>
 
 
-<section class="cv-advogado" id="cv-advogado">
-  <div class="card surge-left">
-    <div class="ft-advogado"></div>
-    <h1>Antonio Trajano da Silva Filho</h1>
-    <h2>Sócio/Advogado</h2>
-  </div>
-  <div class="txt-advogado surge-right">
-    <ul>
-      <li>Formação Acadêmica: Universidade Paulista – UNIP, Campus Ribeirão Preto - SP</li>
-      <li>Inscrição na OAB: Estados de São Paulo e Minas Gerais</li>
-      <li>Curso Técnico: Transações Imobiliárias pela EBRADI – Campus São Paulo - SP</li>
-      <li>Especialização: Direito Imobiliário pela Faculdade Getúlio Vargas</li>
-      <li>Início da Carreira: 2008 como estagiário</li>
-      <li>Experiência Profissional: Mais de 17 anos atuando nas áreas empresarial e imobiliária. Experiência necessária para as mais diversas situações vividas no ramo.</li>
-    </ul>
-  </div>
-</section>
+   <section class="cv-advogado" id="cv-advogado">
+    <div class="card surge-left" id="advogado-card">
+      <div class="ft-advogado" id="ft-advogado"></div>
+      <h1 id="advogado-nome">Antonio Trajano da Silva Filho</h1>
+      <h2 id="advogado-cargo">Sócio/Advogado</h2>
+    </div>
+    <div class="txt-advogado surge-right" id="txt-advogado">
+      <ul id="advogado-info">
+        <li>Formação Acadêmica: Universidade Paulista – UNIP, Campus Ribeirão Preto - SP</li>
+        <li>Inscrição na OAB: Estados de São Paulo e Minas Gerais</li>
+        <li>Curso Técnico: Transações Imobiliárias pela EBRADI – Campus São Paulo - SP</li>
+        <li>Especialização: Direito Imobiliário pela Faculdade Getúlio Vargas</li>
+        <li>Início da Carreira: 2008 como estagiário</li>
+        <li>Experiência Profissional: Mais de 17 anos atuando nas áreas empresarial e imobiliária.</li>
+      </ul>
+      <button class="btn-adv" onclick="trocarAdvogado()">Próximo Advogado</button>
+      <button class="btn-voltar" onclick="voltarAdvogado()">Voltar</button>
+    </div>
+  </section>
 
 <section class="chamada-acao">
   <h1 class="h1-chamada">Evite riscos antes que eles aconteçam!</h1>
@@ -310,13 +312,11 @@
            <div>
             <img src="imagens/logo-colorida.png" style="width: 200px; margin-bottom:15px;" alt="Logo Antonio Trajano Filho"><h3>Contato</h3>
             <p style="margin: 10px 0px;">Endereço: </p>
-            <p style="margin: 10px 0px; font-size: 0.8em;"><strong>Unidade Mococa</strong></p>
-            <p style="margin: 10px 0px;"><a href="https://maps.app.goo.gl/PdGdZdH5jp21QUpF6" target="_blank">Rua Antonio Cristovan 314, Centro, Mococa - SP, CEP 13730-110</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.089587295442!2d-47.00927522381715!3d-21.465001187940786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7b84f0322ec19%3A0xe970a44c483acfe1!2sR.%20Ant%C3%B4nio%20Crist%C3%B3v%C3%A3o%2C%20314%20-%20Centro%2C%20Mococa%20-%20SP%2C%2013730-110!5e0!3m2!1spt-BR!2sbr!4v1739464244806!5m2!1spt-BR!2sbr" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p style="margin: 30px 0px 10px 0px; font-size: 0.8em;"><strong>Unidade Ribeirão Preto</strong></p>
-            <p style="margin: 0px 0px 10px 0px;"><a href="https://maps.app.goo.gl/RLhphQAab5mUq9Mu7" target="_blank">Av. Luiz Eduardo Toledo Prado, 900, Sl. 501, Vila do Golfe, Ribeirão Preto - SP, CEP 14027-250</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.1558459809726!2d-47.837607423823314!3d-21.225667779962237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b9436879dfdd%3A0xb63a4e8daf470957!2sAv.%20Luiz%20Eduardo%20Toledo%20Prado%2C%20900%20-%20501%20-%20Vila%20do%20Golfe%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014027-250!5e0!3m2!1spt-BR!2sbr!4v1739464363521!5m2!1spt-BR!2sbr" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p style="margin: 30px 0px 10px 0px;">Email: antonio@trajanofilhoadvs.com.br</p>
+            <p style="margin: 15px 0px; font-size: 0.8em;"><strong>Unidade Mococa</strong></p>
+           
+            <p style="margin: 15px 0px 10px 0px; font-size: 0.8em;"><strong>Unidade Ribeirão Preto</strong></p>
+
+            <p style="margin: 15px 0px 10px 0px;">Email: antonio@trajanofilhoadvs.com.br</p>
             <p><a href="https://wa.link/5z27zf" target="_blank">Telefone: (16) 99732-9754</a></p>
             <div>
                 <a href="https://wa.link/5z27zf" target="_blank"><input type="button" style="background-color: #A48138; color: white; width: 150px;

@@ -23,7 +23,19 @@ menuLinks.forEach(link => {
 
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    var swiperAdvogados = new Swiper('.swiper-advogados', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination-adv',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next-adv',
+        prevEl: '.swiper-button-prev-adv',
+      },
+    });
+  });
 
 
 
@@ -76,7 +88,62 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+let advogados = [
+  {
+    nome: "Antonio Trajano da Silva Filho",
+    cargo: "Sócio/Advogado",
+    imagem: "../imagens/advogado.jpg",
+    info: `
+      <li>Formação Acadêmica: Universidade Paulista – UNIP, Campus Ribeirão Preto - SP</li>
+      <li>Inscrição na OAB: Estados de São Paulo e Minas Gerais</li>
+      <li>Curso Técnico: Transações Imobiliárias pela EBRADI – Campus São Paulo - SP</li>
+      <li>Especialização: Direito Imobiliário pela Faculdade Getúlio Vargas</li>
+      <li>Início da Carreira: 2008 como estagiário</li>
+      <li>Experiência Profissional: Mais de 17 anos atuando nas áreas empresarial e imobiliária</li>`
+  },
+  {
+    nome: "Ariane de Souza Godinho",
+    cargo: "Advogada",
+    imagem: "../imagens/ariane.jpeg",
+    info: `
+      <li>Formação Acadêmica: Universidade de Franca </li>
+      <li>Inscrição na OAB: Estado de Minas Gerais </li>
+      <li>Especialização: Pós-graduação em Direito do Trabalho, Processo Civil e Direito Previdenciário pela FGV</li>
+      <li>Especialização: Pós-graduação em Direito do Trabalho, Processo Civil e Direito Previdenciário pela FGV</li>
+      `
+  },
 
+  {
+    nome: "Gabriel Moraes",
+    cargo: "Advogada",
+    imagem: "../imagens/gabriel.jpeg",
+    info: `
+      <li>Formação Acadêmica: Universidade Paulista </li>
+      <li>Inscrição na OAB: Estado de São Paulo </li>
+      <li>Especialista em Direito do Trabalho</li>
+     
+      `
+  }
+];
+
+let atual = 0;
+
+function trocarAdvogado() {
+  atual = (atual + 1) % advogados.length;
+  atualizarExibicao();
+}
+
+function voltarAdvogado() {
+  atual = (atual - 1 + advogados.length) % advogados.length;
+  atualizarExibicao();
+}
+
+function atualizarExibicao() {
+  document.getElementById("advogado-nome").innerText = advogados[atual].nome;
+  document.getElementById("advogado-cargo").innerText = advogados[atual].cargo;
+  document.getElementById("ft-advogado").style.backgroundImage = `url(${advogados[atual].imagem})`;
+  document.getElementById("advogado-info").innerHTML = advogados[atual].info;
+}
 
 
   //ativação de animações

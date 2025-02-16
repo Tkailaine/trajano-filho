@@ -659,6 +659,32 @@ background-position: top;
   margin: auto;
 }
 
+.btn-adv{
+  border: none;
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #D39510;
+  color: white;
+  cursor: pointer;
+  margin: 15px 0px 0px 25px;
+
+}
+
+.btn-adv:hover{
+  background-color: #916601;
+}
+
+.btn-voltar{
+  border: none;
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #004aad;
+  color: white;
+  cursor: pointer;
+  margin: 15px 0px 0px 10px;
+}
 .chamada-acao{
   position: relative;
   width: 100%;
