@@ -114,7 +114,7 @@ let advogados = [
   {
     nome: "gabriel Moraes",
     cargo: "Advogado",
-    imagem: "../imagens/ariane.jpg",
+    imagem: "../imagens/gabriel.jpg",
     info: `
       <li>	Formação Acadêmica: Universidade Paulista </li>
       <li>Inscrição na OAB: Estado de São Paulo
