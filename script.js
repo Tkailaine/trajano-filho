@@ -92,7 +92,7 @@ let advogados = [
   {
     nome: "Antonio Trajano da Silva Filho",
     cargo: "Sócio/Advogado",
-    imagem: "../imagens/advogado.jpg",
+    imagem: "imagens/advogado.jpg",
     info: `
       <li>Formação Acadêmica: Universidade Paulista – UNIP, Campus Ribeirão Preto - SP</li>
       <li>Inscrição na OAB: Estados de São Paulo e Minas Gerais</li>
@@ -104,7 +104,7 @@ let advogados = [
   {
     nome: "Ariane de Souza Godinho",
     cargo: "Advogada",
-    imagem: "../imagens/advogado.jpg",
+    imagem: "imagens/advogado.jpg",
     info: `
       <li>	Formação Acadêmica: Universidade de Franca </li>
       <li>Inscrição na OAB: Estado de Minas Gerais </li>
@@ -114,7 +114,7 @@ let advogados = [
   {
     nome: "Gabriel Moraes",
     cargo: "Advogado",
-    imagem: "../imagens/advogado.jpg",
+    imagem: "imagens/advogado.jpg",
     info: `
       <li>	Formação Acadêmica: Universidade Paulista </li>
       <li>Inscrição na OAB: Estado de São Paulo
