@@ -39,18 +39,8 @@ flex-direction: row;
   
 }
 
-
-.cv-advogado{
-  flex-direction: row;
-  width: 90%;
-  margin: auto;
-  gap: 50px;
-  
-}
-
-
-.txt-advogado{
-  width: 90%
+.card img {
+  height: 500px;
   
 }
 

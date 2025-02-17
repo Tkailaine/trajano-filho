@@ -218,24 +218,104 @@
    <section></section>
 
 
-   <section class="cv-advogado" id="cv-advogado">
-    <div class="card surge-left" id="advogado-card">
-      <div class="ft-advogado" id="ft-advogado"></div>
-      <h1 id="advogado-nome">Antonio Trajano da Silva Filho</h1>
-      <h2 id="advogado-cargo">Sócio/Advogado</h2>
+   <section class="sessao-slider" id="sobre">
+    <h1 class="surge-bottom">Conheça nossa equipe</h1>
+    <p class="surge-bottom">Nossa equipe é formada por advogados altamente especializados e comprometidos em oferecer soluções jurídicas eficientes e personalizadas. Com ampla experiência em diversas áreas do direito, conquistamos com ética, transparência e dedicação para garantir a melhor assessoria e representação para nossos clientes.</p>
+    <div class="slider">
+      
+      <div class="card surge-bottom">
+          <img src="imagens/advogado.jpg" alt="Advogado Antonio">
+          <div class="card-content">
+              <h3>Antonio Trajano da Silva Filho
+              </h3>
+              <h4>Sócio/Advogado</h4>
+              <button onclick="expandCard(this)">Saber mais</button>
+              <a href="https://wa.link/5z27zf" target="_blank"><button  class="btn-advogado">Nos contate</button></a>
+          </div>
+          <div class="expanded">
+             <div class="txt-expanded">
+              
+               <ul>
+                <li><strong>Formação Acadêmica:</strong> Universidade Paulista – UNIP, Campus Ribeirão Preto - SP</li>
+                <li><strong>Inscrição na OAB: </strong>Estados de São Paulo e Minas Gerais</li>
+                <li><strong>Curso Técnico:</strong> Transações Imobiliárias pela EBRADI – Campus São Paulo - SP</li>
+                <li><strong>Especialização:</strong> Direito Imobiliário pela Faculdade Getúlio Vargas</li>
+                <li><strong>Início da Carreira:</strong> 2008 como estagiário</li>
+                
+               </ul>
+
+               <ul><li><strong>Experiência Profissional: </strong>Mais de 17 anos atuando nas áreas empresarial e imobiliária.</li></ul>
+
+              
+                
+            
+             </div>
+             
+            
+             <button onclick="closeCard(this)">Fechar</button>
+          </div>
+      </div>
+        <div class="card surge-left">
+            <img src="imagens/ariane.jpg" alt="Advogada Ariane de Souza Godinho">
+            <div class="card-content">
+                <h3>Ariane de Souza Godinho</h3>
+                <h4>Advogada</h4>
+                <button onclick="expandCard(this)">Saber mais</button>
+                <a href="https://wa.link/5z27zf" target="_blank"><button  class="btn-advogado">Contato </button></a>
+            </div>
+            <div class="expanded">
+               <div class="txt-expanded">
+                 
+                 <ul>
+                  <li><strong>Formação Acadêmica:</strong> Universidade de Franca</li>
+                  <li><strong>Inscrição na OAB:</strong> Estado de Minas Gerais</li>
+                 </ul>
+
+                 
+                 <ul>
+                  <li><strong>Especialização:</strong>Pós-graduação em Direito do Trabalho, Processo Civil e Direito Previdenciário pela FGV</li>
+
+                 </ul>
+                
+               </div>
+
+              
+               
+               <button onclick="closeCard(this)">Fechar</button>
+            </div>
+        </div>
+       
+        
+      <div class="card surge-right">
+          <img src="imagens/gabriel.jpg" alt="Advogado Gabriel Moraes">
+          <div class="card-content">
+              <h3>Gabriel Moraes</h3>
+              <h4>Advogado</h4>
+              <button onclick="expandCard(this)">Saber mais</button>
+              <a href="https://wa.link/5z27zf"><button  class="btn-advogado">Contato</button></a>
+          </div>
+          <div class="expanded">
+            <div class="txt-expanded">
+      
+              <ul>
+               <li><strong>Formação Acadêmica:</strong> Universidade Paulista</li>
+               <li><strong>Inscrição na OAB:</strong> Estado de São Paulo</li>
+               <li><strong>Especialização: </strong>Direito do Trabalho</li>
+              </ul>
+
+             
+            </div>
+            <button onclick="closeCard(this)">Fechar</button>
+            
+            </div>
+          </div>
+      </div>
+    <div class="dots">
+        <span class="dot active" onclick="moveSlider(0)"></span>
+        <span class="dot" onclick="moveSlider(1)"></span>
+        <span class="dot" onclick="moveSlider(2)"></span>
     </div>
-    <div class="txt-advogado surge-right" id="txt-advogado">
-      <ul id="advogado-info">
-        <li>Formação Acadêmica: Universidade Paulista – UNIP, Campus Ribeirão Preto - SP</li>
-        <li>Inscrição na OAB: Estados de São Paulo e Minas Gerais</li>
-        <li>Curso Técnico: Transações Imobiliárias pela EBRADI – Campus São Paulo - SP</li>
-        <li>Especialização: Direito Imobiliário pela Faculdade Getúlio Vargas</li>
-        <li>Início da Carreira: 2008 como estagiário</li>
-        <li>Experiência Profissional: Mais de 17 anos atuando nas áreas empresarial e imobiliária.</li>
-      </ul>
-      <button class="btn-adv" onclick="trocarAdvogado()">Próximo Advogado</button>
-      <button class="btn-voltar" onclick="voltarAdvogado()">Voltar</button>
-    </div>
+      </div>
   </section>
 
 <section class="chamada-acao">

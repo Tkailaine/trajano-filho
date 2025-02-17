@@ -31,18 +31,17 @@
   background-attachment: fixed;
 }
 
-.cv-advogado{
-  flex-direction: row;
-  width: 80%;
-  margin: auto;
-  gap: 100px;
+.card{
+  max-width: 25%;
+}
+
+.card img {
+  height: 500px;
   
 }
 
 
-.txt-advogado{
-  width: 80%;
-}
+
     
 .sessao-footer{
     gap: 40px;

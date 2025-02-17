@@ -88,68 +88,39 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-let advogados = [
-  {
-    nome: "Antonio Trajano da Silva Filho",
-    cargo: "Sócio/Advogado",
-    imagem: "./imagens/advogado.jpg",
-    info: `
-      <li>Formação Acadêmica: Universidade Paulista – UNIP, Campus Ribeirão Preto - SP</li>
-      <li>Inscrição na OAB: Estados de São Paulo e Minas Gerais</li>
-      <li>Curso Técnico: Transações Imobiliárias pela EBRADI – Campus São Paulo - SP</li>
-      <li>Especialização: Direito Imobiliário pela Faculdade Getúlio Vargas</li>
-      <li>Início da Carreira: 2008 como estagiário</li>
-      <li>Experiência Profissional: Mais de 17 anos atuando nas áreas empresarial e imobiliária.</li>`
-  },
-  {
-    nome: "Ariane de Souza Godinho",
-    cargo: "Advogada",
-    imagem: "./imagens/ariane.jpg",
-    info: `
-      <li>	Formação Acadêmica: Universidade de Franca </li>
-      <li>Inscrição na OAB: Estado de Minas Gerais </li>
-      <li>Especialização: Pós-graduação em Direito do Trabalho, Processo Civil e Direito Previdenciário pela FGV</li>
-      `
-  },
-  {
-    nome: "Gabriel Moraes",
-    cargo: "Advogado",
-    imagem: "./imagens/gabriel.jpg",
-    info: `
-      <li>	Formação Acadêmica: Universidade Paulista </li>
-      <li>Inscrição na OAB: Estado de São Paulo
-</li>
-      <li>Especialista em Direito do Trabalho</li>
-      `
-  }
-];
+let index = 0;
 
-let atual = 0;
+function moveSlider(n) {
+    const slider = document.querySelector('.slider');
+    const cards = document.querySelectorAll('.card');
+    const totalCards = cards.length;
 
-function trocarAdvogado() {
-  atual = (atual + 1) % advogados.length;
-  atualizarExibicao();
+    // Calcula o deslocamento correto baseado no índice
+    if (window.innerWidth < 768) {
+        const offset = -n * 100; 
+        slider.style.transform = `translateX(${offset}%)`;
+    }
+
+    index = n;
+
+    document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+    document.querySelectorAll('.dot')[n].classList.add('active');
 }
 
-function voltarAdvogado() {
-  atual = (atual - 1 + advogados.length) % advogados.length;
-  atualizarExibicao();
+function expandCard(button) {
+    button.parentElement.nextElementSibling.classList.add('active');
 }
 
-function atualizarExibicao() {
-  document.getElementById("advogado-nome").innerText = advogados[atual].nome;
-  document.getElementById("advogado-cargo").innerText = advogados[atual].cargo;
-
-  // Pegando a div corretamente
-  let fotoAdvogado = document.querySelector(".ft-advogado");
-  
-  // Ajustando a imagem como background corretamente
-  fotoAdvogado.style.backgroundImage = `url('${advogados[atual].imagem}')`;
-  fotoAdvogado.style.backgroundSize = "cover";  
-  fotoAdvogado.style.backgroundPosition = "center";
-
-  document.getElementById("advogado-info").innerHTML = advogados[atual].info;
+function closeCard(button) {
+    button.parentElement.classList.remove('active');
 }
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+        document.querySelector('.slider').style.transform = `translateX(0)`;
+    }
+});
+
 
 
 

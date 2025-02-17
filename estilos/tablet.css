@@ -33,10 +33,15 @@ height: 700px;
 
 
 
-.txt-advogado{
-  width: 80%;
+
+.card img {
+  height: 630px;
+  
 }
 
+.slider {
+  justify-content: space-between;
+}
 
   .links-uteis > li{
     font-size: 1.2em;
