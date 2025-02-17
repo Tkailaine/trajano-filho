@@ -104,7 +104,7 @@ let advogados = [
   {
     nome: "Ariane de Souza Godinho",
     cargo: "Advogada",
-    imagem: "/imagens/advogado.jpg",
+    imagem: "/imagens/ariane.jpg",
     info: `
       <li>	Formação Acadêmica: Universidade de Franca </li>
       <li>Inscrição na OAB: Estado de Minas Gerais </li>
@@ -114,7 +114,7 @@ let advogados = [
   {
     nome: "Gabriel Moraes",
     cargo: "Advogado",
-    imagem: "/imagens/advogado.jpg",
+    imagem: "/imagens/gabriel.jpg",
     info: `
       <li>	Formação Acadêmica: Universidade Paulista </li>
       <li>Inscrição na OAB: Estado de São Paulo
@@ -140,13 +140,17 @@ function atualizarExibicao() {
   document.getElementById("advogado-nome").innerText = advogados[atual].nome;
   document.getElementById("advogado-cargo").innerText = advogados[atual].cargo;
 
+  // Pegando a div corretamente
   let fotoAdvogado = document.querySelector(".ft-advogado");
+  
+  // Ajustando a imagem como background corretamente
   fotoAdvogado.style.backgroundImage = `url('${advogados[atual].imagem}')`;
-  fotoAdvogado.style.backgroundSize = "cover";  // Garante que a imagem cobre a área
-  fotoAdvogado.style.backgroundPosition = "center"; // Centraliza a imagem
+  fotoAdvogado.style.backgroundSize = "cover";  
+  fotoAdvogado.style.backgroundPosition = "center";
 
   document.getElementById("advogado-info").innerHTML = advogados[atual].info;
 }
+
 
 
 
