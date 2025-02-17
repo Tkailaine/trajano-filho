@@ -112,7 +112,7 @@ let advogados = [
       `
   },
   {
-    nome: "gabriel Moraes",
+    nome: "Gabriel Moraes",
     cargo: "Advogado",
     imagem: "../imagens/gabriel.jpg",
     info: `
@@ -139,9 +139,15 @@ function voltarAdvogado() {
 function atualizarExibicao() {
   document.getElementById("advogado-nome").innerText = advogados[atual].nome;
   document.getElementById("advogado-cargo").innerText = advogados[atual].cargo;
-  document.querySelector(".ft-advogado").style.backgroundImage = `url(${advogados[atual].imagem})`;
+
+  let fotoAdvogado = document.querySelector(".ft-advogado");
+  fotoAdvogado.style.backgroundImage = `url('${advogados[atual].imagem}')`;
+  fotoAdvogado.style.backgroundSize = "cover";  // Garante que a imagem cobre a área
+  fotoAdvogado.style.backgroundPosition = "center"; // Centraliza a imagem
+
   document.getElementById("advogado-info").innerHTML = advogados[atual].info;
 }
+
 
 
   //ativação de animações
