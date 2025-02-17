@@ -104,7 +104,7 @@ let advogados = [
   {
     nome: "Ariane de Souza Godinho",
     cargo: "Advogada",
-    imagem: "../imagens/ariane.jpg",
+    imagem: "../imagens/advogado.jpg",
     info: `
       <li>	Formação Acadêmica: Universidade de Franca </li>
       <li>Inscrição na OAB: Estado de Minas Gerais </li>
@@ -114,7 +114,7 @@ let advogados = [
   {
     nome: "Gabriel Moraes",
     cargo: "Advogado",
-    imagem: "../imagens/gabriel.jpg",
+    imagem: "../imagens/advogado.jpg",
     info: `
       <li>	Formação Acadêmica: Universidade Paulista </li>
       <li>Inscrição na OAB: Estado de São Paulo
